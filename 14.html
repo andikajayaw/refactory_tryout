@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>14.md - Menyaring Data</title>
+  </head>
+  <body>
+    <script>
+      const people = [
+        { id: 1, name: "Udin", age: 12 },
+        { id: 2, name: "Wati", age: 51 },
+        { id: 3, name: "Budi", age: 34 },
+        { id: 4, name: "Agus", age: 16 },
+        { id: 5, name: "Sari", age: 19 },
+        { id: 6, name: "Ririn", age: 21 }
+      ];
+
+      var arr = [];
+      for (var i = 0; i < people.length; i++) {
+        //console.log(people[i]);
+        if (people[i].age < 21) {
+          arr.push(people[i]);
+        }
+      }
+      document.write(arr[0] + "<br>" + arr[1] + "<br>" + arr[2]);
+      console.log(arr);
+    </script>
+  </body>
+</html>
+/* Lihat hasi di F12 - Console */

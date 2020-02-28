@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02.md - Grade</title>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Enter your grade: ");
+        if(nilai >= 90 && nilai === 100){
+            document.write("A")
+        } else if(nilai >= 80 && nilai <= 89){
+            document.write("B")
+        } else if(nilai >= 70 && nilai <= 79){
+            document.write("C");
+        } else if(nilai >= 60 && nilai <= 69){
+            document.write("D")
+        } else if(nilai <= 59 && nilai <= 00){
+            document.write("E")
+        } else {
+            document.write("Input the correct grade!")
+        }
+    </script>
+</body>
+</html>

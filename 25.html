@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const fruits = [
+        "Anggur",
+        "Durian",
+        "Tomat",
+        "Bengkoang",
+        "Jeruk",
+        "Pepaya",
+        "Jambu",
+        "Manggis",
+        "Kelapa",
+        "Timun"
+      ];
+
+      function linearsearch(Array, fruits) {
+        for (i = 0; i < Array.length; i++) {
+          if (Array[i] === fruits) {
+            return console.log(`Your fruits is: ${fruits}`);
+          }
+        }
+        console.log("Your number wasn't found!");
+      }
+
+      linearsearch(fruits, "Jeruk");
+    </script>
+  </body>
+</html>
+/* Lihat hasi di F12 - Console */

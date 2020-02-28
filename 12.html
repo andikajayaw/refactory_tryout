@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>12.md - Mirror</title>
+  </head>
+  <body>
+    <script>
+      function mirror(str) {
+        var mirror = "";
+        for (var i = 0; i < str.length; i++) {
+          mirror += str[i];
+        }
+        for (var j = str.length - 1; j >= 0; j--) {
+          mirror += str[j];
+        }
+        return mirror;
+      }
+      document.write(mirror("---ccv"));
+    </script>
+  </body>
+</html>

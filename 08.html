@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08.md - Ganjil/Genap/Kelipatan</title>
+</head>
+<body>
+    <script>
+        for(x=1;x<=1000;x++){
+            if(x%100 == 0){
+                document.write(x + "." + "Kelipatan seratus <br>")
+            } else if(x%2 == 0 && x%5 == 0){
+                document.write(x + "." + "Genap Kelipatan 5 <br>")
+            } else if(x%2 == 0){
+                document.write(x + "." + "Genap <br>")
+            } else if(x%2 !== 0 && x%5 == 0){
+                document.write(x + "." + "Ganjil Kelipatan 5 <br>")
+            } else if(x%2 !== 0){
+                document.write(x + "." + "Ganjil <br>")
+            }
+        }
+    </script>
+</body>
+</html>
