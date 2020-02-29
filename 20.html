@@ -12,21 +12,26 @@
                 return "String"
             } else if(typeof n === 'boolean'){
                 return "Boolean"
-            } else if (typeof n === Array.isArray){
+            } else if (isArray = Array.isArray(n)){
                 return "Array"
             } else if(typeof n === 'object'){
                 return "Object"
+            } else if(typeof n === 'null' || typeof n === 'undefined'){
+                return "Null or Undifined"
             } else if(n%1 === 0){
                 return "Integer"
             } else if(n%1 !== 0){
                 return "Float"
-            } 
+            }
         }
+        console.log(dataType(0x1c))
+        console.log(dataType([0, 1]))
         console.log(dataType(12))
         console.log(dataType("Andika"))
-        console.log(dataType(['satu']))
         console.log(dataType(true))
+        console.log(dataType(['Andika', 'Jaya']))
         console.log(dataType(3.14))
+        console.log(dataType())
         console.log(dataType({name: "Andika", age: 23}))
     </script>
 </body>
